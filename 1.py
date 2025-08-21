@@ -1,11 +1,6 @@
-#wap to convert days into month
-month = int(input("Enter month number (1-12): "))
-
-if month in [1, 3, 5, 7, 8, 10, 12]:
-    print("31 days")
-elif month in [4, 6, 9, 11]:
-    print("30 days")
-elif month == 2:
-    print("28 or 29 days")
-else :
-    print("Invalid month")
+def Add(**r):
+    print(type(r), r, len(r), r.values())
+Add(a=1, b=2, c=3)
+Add(x=10, y=20, z=30, w=40)
+Add(name="Alice", age=25, city="New York")
+Add(first=1, second=2, third=3, fourth=4, fifth=5)
