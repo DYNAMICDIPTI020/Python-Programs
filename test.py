@@ -1,21 +1,15 @@
-import sys
+def write_k_pattern(n, filename="k_pattern.txt"):
+    with open(filename, "w") as f:
+        for i in range(n):
+            for j in range(n):
+                if j == 0 or j == n - i - 1:
+                    f.write("k")
+                else:
+                    f.write(" ")
+            f.write("\n")
 
-if len(sys.argv) != 3:
-    print("Usage: python test.py <num1> <num2>")
-    sys.exit(1)
+# Example usage
+size = 7
+write_k_pattern(size)
 
-try:
-    num1 = float(sys.argv[1])
-    num2 = float(sys.argv[2])
-except ValueError:
-    print("Please provide valid numbers.")
-    sys.exit(1)
-
-addition = num1 + num2
-try:
-    division = num1 / num2
-except ZeroDivisionError:
-    division = "undefined (division by zero)"
-
-print(f"Addition: {addition}")
-print(f"Division: {division}")
+print(f"K pattern written to 'k_pattern.txt'")
