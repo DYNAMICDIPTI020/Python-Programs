@@ -4,8 +4,8 @@ all the attribute present in this module'''
 LIT = 3.14
 
 #max function take two argument same as n1 and n2 and return max element 
-def Max(no1 , no2) :
-        return n1 if n1 > n2 else n2 , "is max"
+def Max(n1 , n2) :
+        return n1 if n1 > n2 else n2  , "is max"
 
 #check function take one argument same as no and check return that
 #number is +ve or -ve
