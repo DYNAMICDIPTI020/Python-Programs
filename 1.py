@@ -1,6 +1,4 @@
-def Add(**r):
-    print(type(r), r, len(r), r.values())
-Add(a=1, b=2, c=3)
-Add(x=10, y=20, z=30, w=40)
-Add(name="Alice", age=25, city="New York")
-Add(first=1, second=2, third=3, fourth=4, fifth=5)
+#wap to convert  celsious to farenhit
+c = float(input("Enter celsious value"))
+f = c * (9/5) + 32
+print("Farenhit value :", f)
